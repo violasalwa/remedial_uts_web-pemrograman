@@ -29,7 +29,7 @@ if (isset($_POST['change'])) {
         if (mysqli_query($conn, $update)) {
             $message = "<span style='color:green;'>Password berhasil diubah. <a href='login.php'>Login sekarang</a>.</span>";
         } else {
-            $message = "Gagal memperbarui password.";
+            $message = "Gagal memperbarui passwordmu..";
         }
     }
 }

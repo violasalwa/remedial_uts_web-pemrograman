@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     Hai $nama_lengkap, <br><br>
                     Klik link ini untuk aktivasi akun Event Organizer mu!<br>
                     <a href='http://localhost/event_organizing/autentikasi/activate.php?token=$token'>
-                        Aktivasi Sekarang
+                        Aktivasi Sekarang Akunmu!
                     </a><br><br>
                     Link berlaku sampai: $expired
                 ";

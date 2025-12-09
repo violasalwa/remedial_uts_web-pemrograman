@@ -16,7 +16,7 @@ if (isset($_POST['update'])) {
     $sql = "UPDATE users SET nama_lengkap='$nama' WHERE id=$user_id";
     if (mysqli_query($conn, $sql)) {
         $_SESSION['user_name'] = $nama;
-        $message = "Profil berhasil diupdate!";
+        $message = "Profilmu berhasil diupdate!";
     }
 }
 

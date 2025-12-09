@@ -44,11 +44,11 @@ if (isset($_POST['reset'])) {
                     <p>Silakan klik link berikut untuk mengatur password baru:</p>
                     <a href='$link'>$link</a>
                     <br><br>
-                    <p>Link ini berlaku selama 1 jam.</p>
+                    <p>Link ini hanya berlaku selama 1 jam.</p>
                 ";
 
                 $mail->send();
-                $message = "<span style='color:green;'>Link reset password telah dikirim ke email Anda.</span>";
+                $message = "<span style='color:green;'>Link reset password telah dikirim ke email mu!.</span>";
             } catch (Exception $e) {
                 $message = "Gagal mengirim email. Error: {$mail->ErrorInfo}";
             }

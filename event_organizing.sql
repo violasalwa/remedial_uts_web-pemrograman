@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS `events`;
 DROP TABLE IF EXISTS `users`;
 
 
--- untuk tabel users
+-- buat tabel users
 CREATE TABLE `users` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `email` VARCHAR(255) NOT NULL UNIQUE,
@@ -28,10 +28,10 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
--- untuk tabel event kegiatan 
+-- buat ke tabel event kegiatan 
 CREATE TABLE `events` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
-  `user_id` INT(11) NOT NULL,       -- EO pemilik kegiatan
+  `user_id` INT(11) NOT NULL,      
   `nama_event` VARCHAR(255) NOT NULL,
   `deskripsi` TEXT DEFAULT NULL,
   `tanggal_event` DATE NOT NULL,

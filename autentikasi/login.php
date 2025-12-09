@@ -15,7 +15,7 @@ if (isset($_POST['login'])) {
         $user = mysqli_fetch_assoc($result);
         
         if ($user['status_akun'] == 0) {
-            $message = "Akun belum diaktivasi. Silakan cek email Anda.";
+            $message = "Akun belum diaktivasi. Silakan cek email mu.";
         } elseif (password_verify($password, $user['password'])) {
 
             $_SESSION['user_id']    = $user['id'];
